@@ -139,6 +139,12 @@ collections:
           - { label: 'Hero Subtítulo', name: 'heroSubtitle', widget: 'string' }
           - { label: 'Hero Lead', name: 'heroLead', widget: 'string' }
           - { label: 'Hero Descrição', name: 'heroDescription', widget: 'string' }
+          - label: 'Cards do Hero'
+            name: 'heroCards'
+            widget: 'list'
+            fields:
+              - { label: 'Título', name: 'title', widget: 'string' }
+              - { label: 'Descrição', name: 'description', widget: 'string' }
           - label: 'Benefícios'
             name: 'benefits'
             widget: 'list'

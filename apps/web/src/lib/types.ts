@@ -66,6 +66,10 @@ export type HomeContent = {
   heroSubtitle: string;
   heroLead: string;
   heroDescription: string;
+  heroCards: {
+    title: string;
+    description: string;
+  }[];
   benefits: string[];
   objectiveText: string;
   howItWorksText: string;

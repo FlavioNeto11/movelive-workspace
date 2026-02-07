@@ -60,6 +60,20 @@ const HOME_CONTENT: HomeContent = {
   heroSubtitle: 'Levando vida até você',
   heroLead: 'Saúde e qualidade de vida no conforto do seu condomínio',
   heroDescription: 'Treine com segurança, autonomia e economia utilizando a academia do seu condomínio.',
+  heroCards: [
+    {
+      title: 'Rápido e intuitivo',
+      description: 'Interface estilo aplicativo, perfeita no celular.',
+    },
+    {
+      title: 'Treinos organizados',
+      description: 'Por grupamento muscular, com busca e filtros.',
+    },
+    {
+      title: 'Segurança em primeiro lugar',
+      description: 'Orienta você para evitar erros e evoluir com consistência.',
+    },
+  ],
   benefits: [
     'Autonomia',
     'Segurança',

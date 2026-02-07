@@ -41,24 +41,14 @@ export default async function HomePage() {
           </div>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            <Card className="border-zinc-900 bg-zinc-950/40">
-              <CardHeader>
-                <CardTitle className="text-base">Rápido e intuitivo</CardTitle>
-                <CardDescription>Interface estilo aplicativo, perfeita no celular.</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="border-zinc-900 bg-zinc-950/40">
-              <CardHeader>
-                <CardTitle className="text-base">Treinos organizados</CardTitle>
-                <CardDescription>Por grupamento muscular, com busca e filtros.</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="border-zinc-900 bg-zinc-950/40">
-              <CardHeader>
-                <CardTitle className="text-base">Segurança em primeiro lugar</CardTitle>
-                <CardDescription>Orienta você para evitar erros e evoluir com consistência.</CardDescription>
-              </CardHeader>
-            </Card>
+            {home.heroCards.map((card) => (
+              <Card key={card.title} className="border-zinc-900 bg-zinc-950/40">
+                <CardHeader>
+                  <CardTitle className="text-base">{card.title}</CardTitle>
+                  <CardDescription>{card.description}</CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
