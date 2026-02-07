@@ -45,5 +45,6 @@
 
 ## Qualidade
 
-- [ ] Lighthouse Mobile sem erros críticos de acessibilidade
+- [x] Lighthouse Mobile (2026-02-07): Performance 47, Acessibilidade 94, Boas Práticas 96, SEO 82
+- [x] Lighthouse Desktop (2026-02-07): Performance 57, Acessibilidade 94, Boas Práticas 96, SEO 82
 - [x] `npm run build -w @movelive/web` passa
