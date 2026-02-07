@@ -1,6 +1,8 @@
 import type { ContentProvider, ExerciseFilters } from '@/lib/content/provider';
 import type {
   Exercise,
+  HomeContent,
+  InstitutionalContent,
   MuscleGroup,
   MuscleGroupId,
   OrientationSection,
@@ -51,6 +53,49 @@ const ORIENTATIONS: OrientationSection[] = [
     ],
   },
 ];
+
+const HOME_CONTENT: HomeContent = {
+  heroTag: 'Produto premium para academias condominiais',
+  heroTitle: 'Move&Live',
+  heroSubtitle: 'Levando vida até você',
+  heroLead: 'Saúde e qualidade de vida no conforto do seu condomínio',
+  heroDescription: 'Treine com segurança, autonomia e economia utilizando a academia do seu condomínio.',
+  benefits: [
+    'Autonomia',
+    'Segurança',
+    'Resultados',
+    'Facilidade',
+    'Treinos organizados',
+    'Acesso 24/7',
+    'Exercícios demonstrados por profissionais',
+    'Ideal para iniciantes e avançados',
+  ],
+  objectiveText:
+    'Levar saúde e qualidade de vida para os moradores no conforto do seu condomínio de forma barata, autônoma e segura.',
+  howItWorksText:
+    'Na próxima página você encontrará ícones com nomes de grupos musculares. Ao clicar, terá acesso a diversos vídeos com exercícios que você pode fazer aqui na sua academia.',
+  impactPhrase:
+    'Academias bem mantidas elevam significativamente a qualidade de vida e aumentam a valorização do condomínio.',
+  valuePillars: [
+    'Expertise comprovada',
+    'Economia garantida',
+    'Resultados mensuráveis',
+    'Moradores mais satisfeitos',
+    'Condomínio mais valorizado',
+  ],
+};
+
+const INSTITUTIONAL_CONTENT: InstitutionalContent = {
+  footerDescription:
+    'Plataforma digital de treinos organizada por grupamentos musculares, pensada para a academia do seu condomínio.',
+  contactSubtitle: 'Quer levar a Move&Live para o seu condomínio? Fale com um consultor.',
+  contactOfferings: [
+    'Biblioteca digital de treinos 24/7',
+    'Manutenção preventiva de equipamentos',
+    'Consultoria de infraestrutura',
+    'Avaliações físicas presenciais mensais',
+  ],
+};
 
 function normalize(s: string) {
   return s
@@ -107,5 +152,13 @@ export class InMemoryProvider implements ContentProvider {
 
   async getOrientations(): Promise<OrientationSection[]> {
     return [...ORIENTATIONS];
+  }
+
+  async getHomeContent(): Promise<HomeContent> {
+    return HOME_CONTENT;
+  }
+
+  async getInstitutionalContent(): Promise<InstitutionalContent> {
+    return INSTITUTIONAL_CONTENT;
   }
 }

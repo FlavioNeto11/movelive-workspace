@@ -2,6 +2,8 @@ import type {
   Exercise,
   Goal,
   Level,
+  HomeContent,
+  InstitutionalContent,
   MuscleGroup,
   MuscleGroupId,
   OrientationSection,
@@ -25,4 +27,6 @@ export interface ContentProvider {
   listReadyWorkouts(): Promise<ReadyWorkout[]>;
   listEquipments(groupId?: MuscleGroupId): Promise<string[]>;
   getOrientations(): Promise<OrientationSection[]>;
+  getHomeContent(): Promise<HomeContent>;
+  getInstitutionalContent(): Promise<InstitutionalContent>;
 }

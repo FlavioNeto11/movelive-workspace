@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import { SITE, WHATSAPP_LINK } from '@/lib/config';
+import { contentProvider } from '@/lib/content';
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const institutional = await contentProvider.getInstitutionalContent();
+
   return (
     <footer className="border-t border-zinc-900 bg-zinc-950">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
@@ -9,8 +12,7 @@ export function SiteFooter() {
           <div className="text-lg font-extrabold">{SITE.name}</div>
           <div className="text-sm text-zinc-400">{SITE.slogan}</div>
           <p className="mt-3 text-sm text-zinc-300">
-            Plataforma digital de treinos organizada por grupamentos musculares, pensada para a academia do seu
-            condomínio.
+            {institutional.footerDescription}
           </p>
         </div>
 

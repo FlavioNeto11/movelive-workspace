@@ -59,3 +59,22 @@ export type OrientationSection = {
   title: string;
   bullets: string[];
 };
+
+export type HomeContent = {
+  heroTag: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  heroLead: string;
+  heroDescription: string;
+  benefits: string[];
+  objectiveText: string;
+  howItWorksText: string;
+  impactPhrase: string;
+  valuePillars: string[];
+};
+
+export type InstitutionalContent = {
+  footerDescription: string;
+  contactSubtitle: string;
+  contactOfferings: string[];
+};

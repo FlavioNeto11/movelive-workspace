@@ -125,3 +125,43 @@ collections:
                 name: 'bullets'
                 widget: 'list'
                 field: { label: 'Item', name: 'item', widget: 'string' }
+
+  - name: 'home'
+    label: 'Home'
+    format: 'json'
+    files:
+      - label: 'Conteúdo da Home'
+        name: 'home'
+        file: 'apps/web/src/content/home.json'
+        fields:
+          - { label: 'Hero Tag', name: 'heroTag', widget: 'string' }
+          - { label: 'Hero Título', name: 'heroTitle', widget: 'string' }
+          - { label: 'Hero Subtítulo', name: 'heroSubtitle', widget: 'string' }
+          - { label: 'Hero Lead', name: 'heroLead', widget: 'string' }
+          - { label: 'Hero Descrição', name: 'heroDescription', widget: 'string' }
+          - label: 'Benefícios'
+            name: 'benefits'
+            widget: 'list'
+            field: { label: 'Benefício', name: 'benefit', widget: 'string' }
+          - { label: 'Texto Objetivo', name: 'objectiveText', widget: 'string' }
+          - { label: 'Texto Como Funciona', name: 'howItWorksText', widget: 'string' }
+          - { label: 'Frase de Impacto', name: 'impactPhrase', widget: 'string' }
+          - label: 'Pilares de Valor'
+            name: 'valuePillars'
+            widget: 'list'
+            field: { label: 'Pilar', name: 'pillar', widget: 'string' }
+
+  - name: 'institutional'
+    label: 'Institucional'
+    format: 'json'
+    files:
+      - label: 'Textos institucionais'
+        name: 'institutional'
+        file: 'apps/web/src/content/institutional.json'
+        fields:
+          - { label: 'Descrição do rodapé', name: 'footerDescription', widget: 'string' }
+          - { label: 'Subtítulo do contato', name: 'contactSubtitle', widget: 'string' }
+          - label: 'O que oferecemos'
+            name: 'contactOfferings'
+            widget: 'list'
+            field: { label: 'Item', name: 'item', widget: 'string' }

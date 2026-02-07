@@ -1,13 +1,22 @@
 import type { ContentProvider, ExerciseFilters } from '@/lib/content/provider';
 import type {
   Exercise,
+  HomeContent,
+  InstitutionalContent,
   MuscleGroup,
   MuscleGroupId,
   OrientationSection,
   ReadyWorkout,
   ReadyWorkoutLevel,
 } from '@/lib/types';
-import { EXERCISES, MUSCLE_GROUPS, ORIENTATIONS, READY_WORKOUTS } from '@/lib/content/cmsData';
+import {
+  EXERCISES,
+  HOME_CONTENT,
+  INSTITUTIONAL_CONTENT,
+  MUSCLE_GROUPS,
+  ORIENTATIONS,
+  READY_WORKOUTS,
+} from '@/lib/content/cmsData';
 
 function normalize(s: string) {
   return s
@@ -64,5 +73,13 @@ export class CmsProvider implements ContentProvider {
 
   async getOrientations(): Promise<OrientationSection[]> {
     return [...ORIENTATIONS];
+  }
+
+  async getHomeContent(): Promise<HomeContent> {
+    return HOME_CONTENT;
+  }
+
+  async getInstitutionalContent(): Promise<InstitutionalContent> {
+    return INSTITUTIONAL_CONTENT;
   }
 }

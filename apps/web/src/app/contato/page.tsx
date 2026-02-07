@@ -4,13 +4,16 @@ import { SectionTitle } from '@/components/SectionTitle';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { WHATSAPP_LINK } from '@/lib/config';
+import { contentProvider } from '@/lib/content';
 
-export default function ContatoPage() {
+export default async function ContatoPage() {
+  const institutional = await contentProvider.getInstitutionalContent();
+
   return (
     <div className="space-y-10">
       <SectionTitle
         title="Contato"
-        subtitle="Quer levar a Move&Live para o seu condomínio? Fale com um consultor."
+        subtitle={institutional.contactSubtitle}
       />
 
       <div className="grid gap-4 md:grid-cols-3">
@@ -69,10 +72,9 @@ export default function ContatoPage() {
         <CardContent className="p-6 text-sm text-zinc-300">
           <div className="font-semibold text-zinc-100">O que oferecemos</div>
           <ul className="mt-3 list-disc space-y-2 pl-5">
-            <li>Biblioteca digital de treinos 24/7</li>
-            <li>Manutenção preventiva de equipamentos</li>
-            <li>Consultoria de infraestrutura</li>
-            <li>Avaliações físicas presenciais mensais</li>
+            {institutional.contactOfferings.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </CardContent>
       </Card>

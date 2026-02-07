@@ -4,19 +4,11 @@ import { Button } from '@/components/ui/Button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/SectionTitle';
 import { SITE } from '@/lib/config';
+import { contentProvider } from '@/lib/content';
 
-const BENEFITS = [
-  'Autonomia',
-  'Segurança',
-  'Resultados',
-  'Facilidade',
-  'Treinos organizados',
-  'Acesso 24/7',
-  'Exercícios demonstrados por profissionais',
-  'Ideal para iniciantes e avançados',
-];
+export default async function HomePage() {
+  const home = await contentProvider.getHomeContent();
 
-export default function HomePage() {
   return (
     <div className="space-y-16">
       {/* Hero */}
@@ -25,19 +17,15 @@ export default function HomePage() {
         <div className="relative">
           <div className="inline-flex items-center gap-2 rounded-2xl border border-zinc-800 bg-zinc-950/60 px-4 py-2 text-sm text-zinc-200">
             <Sparkles className="h-4 w-4 text-emerald-400" />
-            Produto premium para academias condominiais
+            {home.heroTag}
           </div>
 
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight md:text-6xl">{SITE.name}</h1>
-          <p className="mt-2 text-lg font-semibold text-emerald-400 md:text-2xl">{SITE.slogan}</p>
+          <h1 className="mt-6 text-4xl font-extrabold tracking-tight md:text-6xl">{home.heroTitle}</h1>
+          <p className="mt-2 text-lg font-semibold text-emerald-400 md:text-2xl">{home.heroSubtitle}</p>
 
-          <p className="mt-5 max-w-2xl text-base text-zinc-200 md:text-lg">
-            Saúde e qualidade de vida no conforto do seu condomínio
-          </p>
+          <p className="mt-5 max-w-2xl text-base text-zinc-200 md:text-lg">{home.heroLead}</p>
 
-          <p className="mt-3 max-w-2xl text-sm text-zinc-300 md:text-base">
-            Treine com segurança, autonomia e economia utilizando a academia do seu condomínio.
-          </p>
+          <p className="mt-3 max-w-2xl text-sm text-zinc-300 md:text-base">{home.heroDescription}</p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/exercicios">
@@ -80,8 +68,7 @@ export default function HomePage() {
         <SectionTitle title="Qual o objetivo da Move&Live" />
         <Card>
           <CardContent className="p-6 text-base text-zinc-200 md:p-8 md:text-lg">
-            “Levar saúde e qualidade de vida para os moradores no conforto do seu condomínio de forma barata, autônoma
-            e segura.”
+            “{home.objectiveText}”
           </CardContent>
         </Card>
       </section>
@@ -90,8 +77,7 @@ export default function HomePage() {
       <section>
         <SectionTitle title="Como funciona o site" />
         <p className="max-w-3xl text-sm text-zinc-300 md:text-base">
-          “Na próxima página você encontrará ícones com nomes de grupos musculares. Ao clicar, terá acesso a diversos
-          vídeos com exercícios que você pode fazer aqui na sua academia.”
+          “{home.howItWorksText}”
         </p>
 
         <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -121,7 +107,7 @@ export default function HomePage() {
       <section>
         <SectionTitle title="Benefícios" subtitle="Tudo organizado para você treinar com confiança." />
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {BENEFITS.map((b) => (
+          {home.benefits.map((b) => (
             <Card key={b} className="transition hover:-translate-y-0.5 hover:bg-zinc-950/80">
               <CardContent className="flex items-center gap-3 p-5">
                 <CheckCircle2 className="h-5 w-5 text-emerald-400" />
@@ -142,11 +128,9 @@ export default function HomePage() {
               <CardDescription>Benefícios claros para moradores e para o condomínio.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-zinc-200">
-              <div>• Expertise comprovada</div>
-              <div>• Economia garantida</div>
-              <div>• Resultados mensuráveis</div>
-              <div>• Moradores mais satisfeitos</div>
-              <div>• Condomínio mais valorizado</div>
+              {home.valuePillars.map((item) => (
+                <div key={item}>• {item}</div>
+              ))}
             </CardContent>
           </Card>
 
@@ -156,7 +140,7 @@ export default function HomePage() {
               <CardDescription className="text-emerald-200/80">Visão institucional</CardDescription>
             </CardHeader>
             <CardContent className="text-base text-emerald-100">
-              “Academias bem mantidas elevam significativamente a qualidade de vida e aumentam a valorização do condomínio.”
+              “{home.impactPhrase}”
             </CardContent>
           </Card>
         </div>
