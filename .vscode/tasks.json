@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "web: dev",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "dev",
+        "-w",
+        "@movelive/web"
+      ],
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "web: lint",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "lint",
+        "-w",
+        "@movelive/web"
+      ],
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "web: build",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "build",
+        "-w",
+        "@movelive/web"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

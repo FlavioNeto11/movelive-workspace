@@ -1,0 +1,13 @@
+{
+  "name": "movelive-workspace",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "npm@10",
+  "scripts": {
+    "dev": "npm run dev -w @movelive/web",
+    "lint": "npm run lint -w @movelive/web",
+    "build": "npm run build -w @movelive/web"
+  }
+}
