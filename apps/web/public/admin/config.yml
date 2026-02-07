@@ -145,6 +145,10 @@ collections:
             field: { label: 'Benefício', name: 'benefit', widget: 'string' }
           - { label: 'Texto Objetivo', name: 'objectiveText', widget: 'string' }
           - { label: 'Texto Como Funciona', name: 'howItWorksText', widget: 'string' }
+          - { label: 'Título Por que escolher', name: 'whyTitle', widget: 'string' }
+          - { label: 'Descrição Por que escolher', name: 'whyDescription', widget: 'string' }
+          - { label: 'Título Frase de impacto', name: 'impactTitle', widget: 'string' }
+          - { label: 'Subtítulo Frase de impacto', name: 'impactSubtitle', widget: 'string' }
           - { label: 'Frase de Impacto', name: 'impactPhrase', widget: 'string' }
           - label: 'Pilares de Valor'
             name: 'valuePillars'

@@ -69,6 +69,10 @@ export type HomeContent = {
   benefits: string[];
   objectiveText: string;
   howItWorksText: string;
+  whyTitle: string;
+  whyDescription: string;
+  impactTitle: string;
+  impactSubtitle: string;
   impactPhrase: string;
   valuePillars: string[];
 };

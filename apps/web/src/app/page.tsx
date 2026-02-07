@@ -124,8 +124,8 @@ export default async function HomePage() {
         <div className="grid gap-4 md:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle>Modelo corporativo e eficiente</CardTitle>
-              <CardDescription>Benefícios claros para moradores e para o condomínio.</CardDescription>
+              <CardTitle>{home.whyTitle}</CardTitle>
+              <CardDescription>{home.whyDescription}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-zinc-200">
               {home.valuePillars.map((item) => (
@@ -136,8 +136,8 @@ export default async function HomePage() {
 
           <Card className="border-emerald-500/30 bg-emerald-500/10">
             <CardHeader>
-              <CardTitle className="text-emerald-200">Frase de impacto</CardTitle>
-              <CardDescription className="text-emerald-200/80">Visão institucional</CardDescription>
+              <CardTitle className="text-emerald-200">{home.impactTitle}</CardTitle>
+              <CardDescription className="text-emerald-200/80">{home.impactSubtitle}</CardDescription>
             </CardHeader>
             <CardContent className="text-base text-emerald-100">
               “{home.impactPhrase}”
