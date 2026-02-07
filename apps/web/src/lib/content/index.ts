@@ -1,6 +1,7 @@
 import type { ContentProvider } from '@/lib/content/provider';
 import { InMemoryProvider } from '@/lib/content/inMemory';
+import { CmsProvider } from '@/lib/content/cmsProvider';
 
-// Aqui fica o ponto único para trocar por CMS no futuro:
-// export const contentProvider: ContentProvider = new CmsProvider(...)
-export const contentProvider: ContentProvider = new InMemoryProvider();
+const source = process.env.MOVELIVE_CONTENT_SOURCE;
+
+export const contentProvider: ContentProvider = source === 'cms' ? new CmsProvider() : new InMemoryProvider();

@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "id": "pernas", "name": "Pernas", "description": "Força e estabilidade", "icon": "Leg", "order": 1 },
+    { "id": "peito", "name": "Peito", "description": "Empurrar com segurança", "icon": "BadgeCheck", "order": 2 },
+    { "id": "biceps", "name": "Bíceps", "description": "Braços fortes", "icon": "Dumbbell", "order": 3 },
+    { "id": "triceps", "name": "Tríceps", "description": "Definição e potência", "icon": "Zap", "order": 4 },
+    { "id": "dorsais", "name": "Dorsais (Costas)", "description": "Postura e puxada", "icon": "Activity", "order": 5 },
+    { "id": "ombros", "name": "Ombros", "description": "Estabilidade e controle", "icon": "Shield", "order": 6 },
+    { "id": "alongamento", "name": "Alongamento", "description": "Mobilidade e prevenção", "icon": "StretchHorizontal", "order": 7 },
+    { "id": "orientacoes", "name": "Orientações", "description": "Treine do jeito certo", "icon": "BookOpenCheck", "order": 8 }
+  ]
+}

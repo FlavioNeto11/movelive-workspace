@@ -1,0 +1,127 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: 'apps/web/public/uploads'
+public_folder: '/uploads'
+
+collections:
+  - name: 'muscle_groups'
+    label: 'Grupamentos Musculares'
+    format: 'json'
+    files:
+      - label: 'Grupamentos'
+        name: 'muscle_groups'
+        file: 'apps/web/src/content/muscle-groups.json'
+        fields:
+          - label: 'Grupamentos'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'ID', name: 'id', widget: 'string' }
+              - { label: 'Nome', name: 'name', widget: 'string' }
+              - { label: 'Descrição', name: 'description', widget: 'string' }
+              - { label: 'Ícone (Lucide)', name: 'icon', widget: 'string' }
+              - { label: 'Ordem', name: 'order', widget: 'number' }
+
+  - name: 'exercises'
+    label: 'Exercícios'
+    format: 'json'
+    files:
+      - label: 'Exercícios'
+        name: 'exercises'
+        file: 'apps/web/src/content/exercises.json'
+        fields:
+          - label: 'Exercícios'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: 'ID', name: 'id', widget: 'string' }
+              - { label: 'Grupo', name: 'groupId', widget: 'string' }
+              - { label: 'Nome', name: 'name', widget: 'string' }
+              - { label: 'Descrição', name: 'description', widget: 'string' }
+              - { label: 'Equipamento', name: 'equipment', widget: 'string' }
+              - {
+                  label: 'Nível',
+                  name: 'level',
+                  widget: 'select',
+                  options: ['Iniciante', 'Intermediário', 'Avançado'],
+                }
+              - label: 'Objetivos'
+                name: 'goals'
+                widget: 'list'
+                field:
+                  {
+                    label: 'Objetivo',
+                    name: 'goal',
+                    widget: 'select',
+                    options: ['Força', 'Hipertrofia', 'Resistência', 'Mobilidade'],
+                  }
+              - label: 'Vídeo'
+                name: 'video'
+                widget: 'object'
+                required: false
+                fields:
+                  - {
+                      label: 'Provider',
+                      name: 'provider',
+                      widget: 'select',
+                      options: ['youtube', 'vimeo', 'url'],
+                      required: false,
+                    }
+                  - { label: 'Video ID', name: 'videoId', widget: 'string', required: false }
+                  - { label: 'URL', name: 'url', widget: 'string', required: false }
+              - label: 'Dicas'
+                name: 'tips'
+                widget: 'list'
+                required: false
+                field: { label: 'Dica', name: 'tip', widget: 'string' }
+
+  - name: 'ready_workouts'
+    label: 'Treinos Prontos'
+    format: 'json'
+    files:
+      - label: 'Treinos'
+        name: 'ready_workouts'
+        file: 'apps/web/src/content/ready-workouts.json'
+        fields:
+          - label: 'Treinos'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - {
+                  label: 'ID',
+                  name: 'id',
+                  widget: 'select',
+                  options: ['iniciante', 'intermediario', 'avancado'],
+                }
+              - { label: 'Nome', name: 'name', widget: 'string' }
+              - { label: 'Objetivo', name: 'objective', widget: 'string' }
+              - label: 'Itens'
+                name: 'items'
+                widget: 'list'
+                fields:
+                  - { label: 'Exercício (ID)', name: 'exerciseId', widget: 'string' }
+                  - { label: 'Séries', name: 'sets', widget: 'number' }
+                  - { label: 'Repetições', name: 'reps', widget: 'string' }
+                  - { label: 'Descanso (seg)', name: 'restSeconds', widget: 'number' }
+
+  - name: 'orientacoes'
+    label: 'Orientações'
+    format: 'json'
+    files:
+      - label: 'Conteúdo'
+        name: 'orientacoes'
+        file: 'apps/web/src/content/orientacoes.json'
+        fields:
+          - label: 'Seções'
+            name: 'sections'
+            widget: 'list'
+            fields:
+              - { label: 'Título', name: 'title', widget: 'string' }
+              - label: 'Tópicos'
+                name: 'bullets'
+                widget: 'list'
+                field: { label: 'Item', name: 'item', widget: 'string' }

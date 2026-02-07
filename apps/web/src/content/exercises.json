@@ -1,0 +1,354 @@
+{
+  "items": [
+    {
+      "id": "agachamento-goblet",
+      "groupId": "pernas",
+      "name": "Agachamento Goblet",
+      "description": "Agache com halter à frente, mantendo tronco firme.",
+      "equipment": "Halter",
+      "level": "Iniciante",
+      "goals": ["Força", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "leg-press",
+      "groupId": "pernas",
+      "name": "Leg Press",
+      "description": "Empurre a plataforma com os pés, controlando a descida.",
+      "equipment": "Leg Press",
+      "level": "Intermediário",
+      "goals": ["Força", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "cadeira-extensora",
+      "groupId": "pernas",
+      "name": "Cadeira Extensora",
+      "description": "Estenda os joelhos com controle para ativar quadríceps.",
+      "equipment": "Cadeira extensora",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia", "Resistência"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "mesa-flexora",
+      "groupId": "pernas",
+      "name": "Mesa Flexora",
+      "description": "Flexione os joelhos para trabalhar posteriores da coxa.",
+      "equipment": "Mesa flexora",
+      "level": "Intermediário",
+      "goals": ["Hipertrofia", "Resistência"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "panturrilha-em-pe",
+      "groupId": "pernas",
+      "name": "Elevação de Panturrilha",
+      "description": "Suba e desça na ponta do pé com pausa no topo.",
+      "equipment": "Peso corporal",
+      "level": "Iniciante",
+      "goals": ["Resistência", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "supino-reto",
+      "groupId": "peito",
+      "name": "Supino Reto",
+      "description": "Empurre a barra/halteres com escápulas estabilizadas.",
+      "equipment": "Banco + Halteres",
+      "level": "Intermediário",
+      "goals": ["Força", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "crucifixo",
+      "groupId": "peito",
+      "name": "Crucifixo",
+      "description": "Abra os braços com leve flexão de cotovelos e controle.",
+      "equipment": "Banco + Halteres",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "flexao-bracos",
+      "groupId": "peito",
+      "name": "Flexão de Braços",
+      "description": "Empurre o chão mantendo corpo alinhado e abdômen firme.",
+      "equipment": "Peso corporal",
+      "level": "Iniciante",
+      "goals": ["Resistência", "Força"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "crossover-cabos",
+      "groupId": "peito",
+      "name": "Crossover na Polia",
+      "description": "Cruze as mãos à frente, mantendo ombros para baixo.",
+      "equipment": "Polia",
+      "level": "Avançado",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "supino-inclinado",
+      "groupId": "peito",
+      "name": "Supino Inclinado",
+      "description": "Empurre no banco inclinado para enfatizar parte superior.",
+      "equipment": "Banco inclinado + Halteres",
+      "level": "Intermediário",
+      "goals": ["Força", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "rosca-direta",
+      "groupId": "biceps",
+      "name": "Rosca Direta",
+      "description": "Flexione cotovelos sem balançar o tronco.",
+      "equipment": "Halteres",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia", "Resistência"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "rosca-martelo",
+      "groupId": "biceps",
+      "name": "Rosca Martelo",
+      "description": "Pegada neutra para braço e antebraço.",
+      "equipment": "Halteres",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "rosca-scott",
+      "groupId": "biceps",
+      "name": "Rosca Scott",
+      "description": "Isola o bíceps com apoio no banco Scott.",
+      "equipment": "Banco Scott",
+      "level": "Intermediário",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "rosca-cabo",
+      "groupId": "biceps",
+      "name": "Rosca no Cabo",
+      "description": "Tensão constante com polia, movimento controlado.",
+      "equipment": "Polia",
+      "level": "Intermediário",
+      "goals": ["Resistência", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "chin-up-assistido",
+      "groupId": "biceps",
+      "name": "Chin-up Assistido",
+      "description": "Puxada com pegada supinada com assistência se necessário.",
+      "equipment": "Barra (assistido)",
+      "level": "Avançado",
+      "goals": ["Força"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "triceps-polia",
+      "groupId": "triceps",
+      "name": "Tríceps na Polia",
+      "description": "Estenda cotovelos mantendo ombros estáveis.",
+      "equipment": "Polia",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia", "Resistência"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "triceps-testa",
+      "groupId": "triceps",
+      "name": "Tríceps Testa",
+      "description": "Flexione e estenda cotovelos com controle no banco.",
+      "equipment": "Banco + Halteres",
+      "level": "Intermediário",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "mergulho-banco",
+      "groupId": "triceps",
+      "name": "Mergulho no Banco",
+      "description": "Desça devagar e empurre até estender os braços.",
+      "equipment": "Banco",
+      "level": "Iniciante",
+      "goals": ["Resistência", "Força"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "triceps-corda",
+      "groupId": "triceps",
+      "name": "Tríceps Corda",
+      "description": "Abra a corda no final do movimento para maior ativação.",
+      "equipment": "Polia + corda",
+      "level": "Intermediário",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "paralelas-assistidas",
+      "groupId": "triceps",
+      "name": "Paralelas Assistidas",
+      "description": "Desça com tronco levemente inclinado, suba com controle.",
+      "equipment": "Paralelas (assistido)",
+      "level": "Avançado",
+      "goals": ["Força", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "puxada-frente",
+      "groupId": "dorsais",
+      "name": "Puxada na Frente",
+      "description": "Puxe a barra em direção ao peito, sem jogar o corpo.",
+      "equipment": "Puxador",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia", "Resistência"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "remada-baixa",
+      "groupId": "dorsais",
+      "name": "Remada Baixa",
+      "description": "Puxe até o abdômen mantendo peito aberto.",
+      "equipment": "Remada baixa",
+      "level": "Intermediário",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "remada-unilateral",
+      "groupId": "dorsais",
+      "name": "Remada Unilateral",
+      "description": "Remada com halter com tronco firme e cotovelo próximo.",
+      "equipment": "Halter",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "levantamento-terra",
+      "groupId": "dorsais",
+      "name": "Levantamento Terra (técnica)",
+      "description": "Padrão de dobra do quadril com coluna neutra (leve).",
+      "equipment": "Barra (leve)",
+      "level": "Avançado",
+      "goals": ["Força"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "pulldown-braço-reto",
+      "groupId": "dorsais",
+      "name": "Pulldown com Braço Reto",
+      "description": "Puxe a barra reta para baixo ativando dorsais.",
+      "equipment": "Polia",
+      "level": "Intermediário",
+      "goals": ["Resistência", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "desenvolvimento-ombro",
+      "groupId": "ombros",
+      "name": "Desenvolvimento",
+      "description": "Empurre acima da cabeça mantendo tronco estável.",
+      "equipment": "Halteres",
+      "level": "Intermediário",
+      "goals": ["Força", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "elevacao-lateral",
+      "groupId": "ombros",
+      "name": "Elevação Lateral",
+      "description": "Eleve até a linha dos ombros com controle.",
+      "equipment": "Halteres",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "elevacao-frontal",
+      "groupId": "ombros",
+      "name": "Elevação Frontal",
+      "description": "Eleve o halter à frente sem compensar a lombar.",
+      "equipment": "Halter",
+      "level": "Iniciante",
+      "goals": ["Resistência", "Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "face-pull",
+      "groupId": "ombros",
+      "name": "Face Pull",
+      "description": "Puxe a corda na direção do rosto, abrindo cotovelos.",
+      "equipment": "Polia + corda",
+      "level": "Intermediário",
+      "goals": ["Resistência"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "encolhimento",
+      "groupId": "ombros",
+      "name": "Encolhimento",
+      "description": "Eleve os ombros para trabalhar trapézio.",
+      "equipment": "Halteres",
+      "level": "Iniciante",
+      "goals": ["Hipertrofia"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "alongamento-posterior",
+      "groupId": "alongamento",
+      "name": "Alongamento de Posterior",
+      "description": "Alongue a parte de trás da coxa com respiração calma.",
+      "equipment": "Peso corporal",
+      "level": "Iniciante",
+      "goals": ["Mobilidade"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "mobilidade-quadril",
+      "groupId": "alongamento",
+      "name": "Mobilidade de Quadril",
+      "description": "Sequência simples para soltar quadril antes do treino.",
+      "equipment": "Peso corporal",
+      "level": "Iniciante",
+      "goals": ["Mobilidade"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "alongamento-peitoral",
+      "groupId": "alongamento",
+      "name": "Alongamento de Peitoral",
+      "description": "Abra o peito com apoio na parede, sem dor.",
+      "equipment": "Parede",
+      "level": "Iniciante",
+      "goals": ["Mobilidade"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "mobilidade-tornozelo",
+      "groupId": "alongamento",
+      "name": "Mobilidade de Tornozelo",
+      "description": "Melhore a dorsiflexão para agachar com mais conforto.",
+      "equipment": "Peso corporal",
+      "level": "Intermediário",
+      "goals": ["Mobilidade"],
+      "video": { "provider": "youtube", "videoId": "" }
+    },
+    {
+      "id": "alongamento-costas",
+      "groupId": "alongamento",
+      "name": "Alongamento de Costas",
+      "description": "Libere a lombar e dorsal com movimentos suaves.",
+      "equipment": "Peso corporal",
+      "level": "Iniciante",
+      "goals": ["Mobilidade"],
+      "video": { "provider": "youtube", "videoId": "" }
+    }
+  ]
+}

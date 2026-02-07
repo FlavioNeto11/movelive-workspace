@@ -20,6 +20,13 @@ uma biblioteca de treinos em vídeo para moradores de condomínio.
 
 5. Acesse: http://localhost:3000
 
+## CMS/Admin (Fase B — opcional)
+
+- Admin: http://localhost:3000/admin
+- Para usar conteúdo do CMS, defina `MOVELIVE_CONTENT_SOURCE=cms` antes de rodar.
+- Os dados ficam em `apps/web/src/content/*.json`.
+- Para edição local com Decap, rode: `npx decap-server`.
+
 ## Como “mandar” o Copilot construir
 
 - Leia (uma vez) o arquivo:
