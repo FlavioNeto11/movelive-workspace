@@ -58,7 +58,8 @@ export async function GET(req: Request) {
   });
 
   const bytes = await pdf.save();
-  return new NextResponse(bytes, {
+  const body = Uint8Array.from(bytes);
+  return new NextResponse(body, {
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Disposition': `attachment; filename="movelive-${nivel}.pdf"`,

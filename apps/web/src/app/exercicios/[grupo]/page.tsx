@@ -7,8 +7,9 @@ import { SectionTitle } from '@/components/SectionTitle';
 import { Card, CardContent } from '@/components/ui/Card';
 import { GroupClient } from './ui';
 
-export default async function GroupPage({ params }: { params: { grupo: MuscleGroupId } }) {
-  const group = await contentProvider.getMuscleGroup(params.grupo);
+export default async function GroupPage({ params }: { params: Promise<{ grupo: MuscleGroupId }> }) {
+  const { grupo } = await params;
+  const group = await contentProvider.getMuscleGroup(grupo);
   if (!group || group.id === 'orientacoes') return notFound();
 
   const equipments = await contentProvider.listEquipments(group.id);

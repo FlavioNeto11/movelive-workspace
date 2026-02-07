@@ -13,8 +13,9 @@ const LABEL: Record<ReadyWorkoutLevel, string> = {
   avancado: 'Treino Avançado',
 };
 
-export default async function ReadyWorkoutPage({ params }: { params: { nivel: ReadyWorkoutLevel } }) {
-  const workout = await contentProvider.getReadyWorkout(params.nivel);
+export default async function ReadyWorkoutPage({ params }: { params: Promise<{ nivel: ReadyWorkoutLevel }> }) {
+  const { nivel } = await params;
+  const workout = await contentProvider.getReadyWorkout(nivel);
   if (!workout) return notFound();
 
   // Pré-carrega os exercícios do treino

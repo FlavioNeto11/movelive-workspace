@@ -14,12 +14,16 @@ uma biblioteca de treinos em vídeo para moradores de condomínio.
    npm run dev -w @movelive/web
    ```
 
-4. Acesse: http://localhost:3000
+> Recomendado: Node LTS + npm com suporte a workspaces.
+
+4. (Opcional) Pelo VS Code, use o task **`root: setup`** para instalar dependências.
+
+5. Acesse: http://localhost:3000
 
 ## Como “mandar” o Copilot construir
 
 - Leia (uma vez) o arquivo:
-  - `.github/copilot-instructions.md`  ✅ (regras duras e arquitetura)
+  - `.github/copilot-instructions.md` ✅ (regras duras e arquitetura)
 - Depois siga o **roteiro**:
   - `docs/copilot-runbook.md`
 
@@ -35,4 +39,5 @@ uma biblioteca de treinos em vídeo para moradores de condomínio.
 “Levar saúde e qualidade de vida para os moradores no conforto do seu condomínio de forma barata, autônoma e segura.”
 
 ---
+
 **Slogan obrigatório:** Levando vida até você

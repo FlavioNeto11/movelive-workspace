@@ -2,6 +2,16 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "root: setup",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "setup"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "web: dev",
       "type": "shell",
       "command": "npm",
