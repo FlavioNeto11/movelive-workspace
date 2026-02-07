@@ -54,3 +54,8 @@ export type ReadyWorkout = {
   objective: string;
   items: ReadyWorkoutItem[];
 };
+
+export type OrientationSection = {
+  title: string;
+  bullets: string[];
+};

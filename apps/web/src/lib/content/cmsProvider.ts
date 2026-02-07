@@ -1,6 +1,13 @@
 import type { ContentProvider, ExerciseFilters } from '@/lib/content/provider';
-import type { Exercise, MuscleGroup, MuscleGroupId, ReadyWorkout, ReadyWorkoutLevel } from '@/lib/types';
-import { EXERCISES, MUSCLE_GROUPS, READY_WORKOUTS } from '@/lib/content/cmsData';
+import type {
+  Exercise,
+  MuscleGroup,
+  MuscleGroupId,
+  OrientationSection,
+  ReadyWorkout,
+  ReadyWorkoutLevel,
+} from '@/lib/types';
+import { EXERCISES, MUSCLE_GROUPS, ORIENTATIONS, READY_WORKOUTS } from '@/lib/content/cmsData';
 
 function normalize(s: string) {
   return s
@@ -53,5 +60,9 @@ export class CmsProvider implements ContentProvider {
   async listEquipments(groupId?: MuscleGroupId): Promise<string[]> {
     const list = groupId ? EXERCISES.filter((e) => e.groupId === groupId) : EXERCISES;
     return Array.from(new Set(list.map((e) => e.equipment))).sort((a, b) => a.localeCompare(b, 'pt-BR'));
+  }
+
+  async getOrientations(): Promise<OrientationSection[]> {
+    return [...ORIENTATIONS];
   }
 }

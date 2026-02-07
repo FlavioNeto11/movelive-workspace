@@ -1,4 +1,13 @@
-import type { Exercise, Goal, Level, MuscleGroup, MuscleGroupId, ReadyWorkout, ReadyWorkoutLevel } from '@/lib/types';
+import type {
+  Exercise,
+  Goal,
+  Level,
+  MuscleGroup,
+  MuscleGroupId,
+  OrientationSection,
+  ReadyWorkout,
+  ReadyWorkoutLevel,
+} from '@/lib/types';
 
 export type ExerciseFilters = {
   q?: string;
@@ -15,4 +24,5 @@ export interface ContentProvider {
   getReadyWorkout(level: ReadyWorkoutLevel): Promise<ReadyWorkout | null>;
   listReadyWorkouts(): Promise<ReadyWorkout[]>;
   listEquipments(groupId?: MuscleGroupId): Promise<string[]>;
+  getOrientations(): Promise<OrientationSection[]>;
 }
