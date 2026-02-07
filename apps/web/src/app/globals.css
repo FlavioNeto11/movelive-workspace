@@ -17,3 +17,7 @@ body {
 a {
   @apply text-inherit;
 }
+
+a:focus-visible {
+  @apply outline-none ring-2 ring-emerald-400 ring-offset-2 ring-offset-zinc-950 rounded-md;
+}

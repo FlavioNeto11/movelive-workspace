@@ -17,7 +17,7 @@ export function SiteHeader() {
           <span className="text-lg font-extrabold tracking-tight">{SITE.name}</span>
           <span className="text-xs text-zinc-400">{SITE.slogan}</span>
         </Link>
-        <nav className="hidden gap-6 md:flex">
+        <nav className="hidden gap-6 md:flex" aria-label="Navegação principal">
           {nav.map((i) => (
             <Link key={i.href} href={i.href} className="text-sm text-zinc-200 hover:text-zinc-50">
               {i.label}
